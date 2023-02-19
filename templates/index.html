@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO2 Emissions Predictor </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="body" >
+    <div class="demo">
+        <div>
+            <img src="../static/images/background.jpg" width="100px" height="100px">
+        </div>
+    </div>
+    <div class="login">
+	<h1>Predict CO2 Emissions</h1>
+    <form action="{{ url_for('predict')}}"method="post">
+    	<label>ENGINE SIZE:</label>
+		<input type="text" name="ENGINE_SIZE"  required="required" /><br>
+        <label>CYLINDERS:</label>
+        <input type="text" name="CYLINDERS"  required="required" /><br>
+        <label>FUEL CONSUMPTION IN CITY:</label>
+        <input type="text" name="FC_CITY" required="required" /><br>
+        <label>FUEL CONSUMPTION IN HIGHWAY:</label>
+        <input type="text" name="FC_HWY" required="required" /><br>
+        <label>FUEL CONSUMPTION COMB:</label>
+        <input type="text" name="FC_COMB" required="required" /><br>
+        <label>FUEL CONSUMPTION COMB MPG:</label>
+        <input type="text" name="FC_COMB_MPG" required="required" /><br>
+        <button type="submit" class="btn">Predict</button>
+    </form>
+   <br>
+   <br>
+    <div>
+        <h2>{{ prediction_text }}</h2>
+    </div>
+ </div>
+
+</body>
+</html>

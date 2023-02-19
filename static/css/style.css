@@ -1,0 +1,69 @@
+.demo div {
+    float: left;
+    clear: none;
+    align-self: center;
+}
+
+.login form {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .login label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .login input[type="text"],
+  .login input[type="email"],
+  .login textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .login button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .login button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .login input[type="text"]:focus,
+  .login input[type="email"]:focus,
+  .login textarea:focus {
+    border: 2px solid #4CAF50;
+  }
+  
+    
+
+h1{
+    font-family:'Times New Roman';
+}
+h2{
+    color:darkred;
+    background-color: dimgray;
+}
+
+.body{
+    background-color: darkslateblue;
+}
+
+.btn{
+    background-color: lightseagreen;
+    font-size: medium;
+    font-weight: bold;
+}
